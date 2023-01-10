@@ -1,4 +1,3 @@
-
 import cv2
 import numpy as np
 
@@ -18,20 +17,22 @@ cam.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
 
 
 while True:
-    ret, frame = cam.read()
-    ##frame = cv2.resize(frame, (width, height))
-    frame = cv2.resize(frame, (int(width / cols), int(height / cols)))
+ret, frame = cam.read()
+##frame = cv2.resize(frame, (width, height))
 
-    for row in range(0, rows):
-        for col in range(0, cols):
-            windowName = "Window " + str(row) + " x " + str(col)
-            cv2.imshow(windowName, frame)
-            cv2.moveWindow(windowName, int(width / cols) * col, int(height / cols + 30) * row)
+## Scale the frame with width and height
+frame = cv2.resize(frame, (int(width / cols), int(height / cols)))
+
+for row in range(0, rows):
+for col in range(0, cols):
+windowName = "Window " + str(row) + " x " + str(col)
+cv2.imshow(windowName, frame)
+cv2.moveWindow(windowName, int(width / cols) * col, int(height / cols + 30) * row)
 
 
-    if(cv2.waitKey(1) & 0xff == ord('f')):
-        break
+if(cv2.waitKey(1) & 0xff == ord('f')):
+break
 
-                           
+
 cam.release()
 cv2.destroyAllWindows()
