@@ -43,12 +43,12 @@ findHands = MpHands(2, .5, .5)
 
 
 ## -------------- Create Pong Game -----------------------------
-## Init Paddle For Pong Game
+## Initialize Paddle For Pong Game
 paddleWidth = 125
 paddleHeight = 25
 paddleColor = (255, 255, 255)
 
-## Init Ball For Pong Game
+## Initialize Ball For Pong Game
 ballRadius = 15
 ballColor = (0, 0, 255)
 ballXPos = int(width / 2)
