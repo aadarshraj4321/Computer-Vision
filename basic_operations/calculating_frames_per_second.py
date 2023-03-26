@@ -29,5 +29,6 @@ while True:
     if(cv2.waitKey(1) & 0xff == ord('f')):
         break
 
+## release the camera
 cam.release()
 cv2.destroyAllWindows()
