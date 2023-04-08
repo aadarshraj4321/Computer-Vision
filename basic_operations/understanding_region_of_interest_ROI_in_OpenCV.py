@@ -7,7 +7,7 @@ import numpy as np
 #print(cv2.__version__)
 #print(np.__version__)
 
-
+##cam = cv2.VideoCapture(0)
 cam = cv2.VideoCapture("video/4.mp4")
 
 
