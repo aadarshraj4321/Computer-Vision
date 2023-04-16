@@ -1,19 +1,5 @@
-  
-  # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'process.ui'
-#
-# Created by: PyQt5 UI code generator 5.11.3
-#
-# WARNING! All changes made in this file will be lost!
-#
-# Subscribe to PyShine Youtube channel for more detail! 
-# 
-# This code will let user to input 1) image 2) video 3) webcam and apply lip color 
-#
-# Essentials can be installed through pip install: dlib, cv2, PyQt5, numpy, imutils, pyshine 
-#
-# Usage: python process.py
+# Install this libraries: dlib, cv2, PyQt5, numpy, imutils, pyshine 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog, QColorDialog
@@ -384,16 +370,13 @@ class Ui_MainWindow(object):
 
 	def retranslateUi(self, MainWindow):
 		_translate = QtCore.QCoreApplication.translate
-		MainWindow.setWindowTitle(_translate("MainWindow", "PyShine video process"))
+		MainWindow.setWindowTitle(_translate("MainWindow", "Lipstick AR: Team Udit Project "))
 		self.pushButton_2.setText(_translate("MainWindow", "Start"))
 		self.label_2.setText(_translate("MainWindow", "Brightness"))
 		self.label_3.setText(_translate("MainWindow", "Blur"))
 		self.pushButton.setText(_translate("MainWindow", "Take picture"))
 		self.pushButton_3.setText(_translate("MainWindow", "Color"))
 
-# Subscribe to PyShine Youtube channel for more detail! 
-
-# WEBSITE: www.pyshine.com
 
 
 if __name__ == "__main__":
