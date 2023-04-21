@@ -1,6 +1,8 @@
 
 # Install this libraries: dlib, cv2, PyQt5, numpy, imutils, pyshine 
 
+
+## import libraries
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog, QColorDialog
 from PyQt5.QtGui import QImage
