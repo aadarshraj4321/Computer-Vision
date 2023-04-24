@@ -30,6 +30,10 @@ for f in file_paths:
 	base_name = os.path.splitext(base_name)[0]
 	RGB_dict[base_name]  =  [r,g,b]
 
+	
+	
+	
+## UI Class
 class Ui_MainWindow(object):
 	def setupUi(self, MainWindow):
 		MainWindow.setObjectName("MainWindow")
